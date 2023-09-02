@@ -1,0 +1,43 @@
+body
+{
+    margin:0px;
+    border:0px;
+}
+h1,h2,h3,h4,h5,h6
+{
+    margin:0%;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+a:hover
+{
+    color:#bb5a3a;
+}
+nav
+{
+    height: 70px;
+    width:80vw;
+    margin-left: 10vw;
+    background: white;
+    position: sticky;
+    top:0;
+    font-weight:bold;
+    font-size:200%;
+    display: flex;
+    align-items: center;
+    border-left:1px solid rgb(202, 201, 201);
+    border-right:1px solid rgb(202, 201, 201);
+    border-bottom:1px solid rgb(202, 201, 201);
+    border-radius:0 0 0.5em 0.5em;
+}
+ul
+{
+    margin-left: 60%;
+}
+ul li
+{
+    display:inline;
+}
