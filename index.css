@@ -41,3 +41,14 @@ ul li
 {
     display:inline;
 }
+
+.slide
+{
+    display: none;
+}
+
+img {
+    width: 100vw;
+    height:40vh;
+}
+
