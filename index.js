@@ -24,7 +24,6 @@ showSlides = ()=>
 }
 window.onload = () =>
 {
-    var slideIndex = 0;
     showSlides();
 }
 
