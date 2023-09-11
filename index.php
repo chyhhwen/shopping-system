@@ -13,6 +13,7 @@
              <head>
                  <link rel="stylesheet" href="./public/index.css">
                  <link rel="stylesheet" href="./public/client.css">
+                 <script type="text/javascript" src="./public/client.js"></script>
                  <script type="text/javascript" src="./public/index.js"></script>
                  <meta charset="UTF-8">
                  <title>demo</title>
