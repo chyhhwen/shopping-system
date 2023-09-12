@@ -21,14 +21,34 @@ class router
             break;
             case '/login':
                 return require "./views/login.php";
-            case '/register_check':
+            case '/login_check':
                 $u = @$_POST["user"];
                 $p = @$_POST["pass"];
-                /*$sql = new sql( );
+                $sql = new sql( );
                 $sql -> config("root","","shop","user");
-                $sql -> put_data(['',md5(time()),$u,md5($p)]);
-                $sql -> add("(?,?,?,?)");
-                header('refresh:0;url="/"');*/
+                $sql -> put_data(['id','uid','name','password']);
+                $data = $sql -> sel();
+                $check = false;
+                foreach($data as $key => $val)
+                {
+                    if($data[$key]['name'] == $u)
+                    {
+                        if($data[$key]['pass'] == md5($p))
+                        {
+                            $check = true;
+                        }
+                    }
+                }
+                if($check)
+                {
+                    //echo 'alert(\'登入成功\')';
+                    header('refresh:0;url="/"');
+                }
+                else
+                {
+                    //echo 'alert(\'登入失敗\')';
+                    header('refresh:0;url="/"');
+                }
             default:
                 http_response_code(404);
                 return require "./views/error.php";

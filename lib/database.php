@@ -62,8 +62,9 @@ class sql
             {
                 array_push($comments, array(
                     "id" => $row[$this->field[0]],
-                    "name" => $row[$this->field[1]],
-                    "data" => $row[$this->field[2]]
+                    "uid" => $row[$this->field[1]],
+                    "name" => $row[$this->field[2]],
+                    "pass" => $row[$this->field[3]],
                 ));
             }
         }
