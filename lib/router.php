@@ -41,12 +41,11 @@ class router
                 }
                 if($check)
                 {
-                    //echo 'alert(\'登入成功\')';
+                    $_SESSION['index'] = true;
                     header('refresh:0;url="/"');
                 }
                 else
                 {
-                    //echo 'alert(\'登入失敗\')';
                     header('refresh:0;url="/"');
                 }
             default:

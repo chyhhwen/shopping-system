@@ -1,3 +1,47 @@
+body
+{
+    margin:0px;
+    border:0px;
+    background-color: #d7d7d7;
+}
+h1,h2,h3,h4,h5,h6
+{
+    margin:0%;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+a:hover
+{
+    color:#bb5a3a;
+}
+nav
+{
+    height: 70px;
+    width:90vw;
+    margin-left: 5vw;
+    background: white;
+    position: sticky;
+    top:0;
+    font-weight:bold;
+    font-size:200%;
+    display: flex;
+    align-items: center;
+    border-left:1px solid rgb(202, 201, 201);
+    border-right:1px solid rgb(202, 201, 201);
+    border-bottom:1px solid rgb(202, 201, 201);
+    border-radius:0 0 0.5em 0.5em;
+}
+ul
+{
+    margin-left: 60%;
+}
+ul li
+{
+    display:inline;
+}
 .view
 {
     width: 50vw;
@@ -32,4 +76,8 @@
     margin-left: 30%;
     font-size: 50%;
     font-size: 150%;
-}
+}.item span
+ {
+     margin-left: 10%;
+     font-size: 200%;
+ }

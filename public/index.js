@@ -1,5 +1,5 @@
-//var i = -1;
-/*showSlides = ()=>
+var i = -1;
+showSlides = ()=>
 {
     var slides = document.querySelectorAll(".slide");
     if (i > slides.length)
@@ -21,11 +21,11 @@
         slides[i + 1].style.display = "block";
     }
 
-}*/
-/*window.onload = () =>
+}
+window.onload = () =>
 {
-    //showSlides();
-}*/
+    showSlides();
+}
 
 
 
