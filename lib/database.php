@@ -74,6 +74,34 @@ class sql
         unset($pdo);
         return $comments;
     }
+    public function prosel()
+    {
+        $pdo = $this->conn();
+        $sql = "SELECT * FROM `". $this->db ."`";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $comments = array();
+        try
+        {
+            while($row = $stmt->fetch(PDO::FETCH_ASSOC))
+            {
+                array_push($comments, array(
+                    "id" => $row[$this->field[0]],
+                    "pid" => $row[$this->field[1]],
+                    "name" => $row[$this->field[2]],
+                    "img" => $row[$this->field[3]],
+                    "price" => $row[$this->field[4]],
+                    "time" => $row[$this->field[5]]
+                ));
+            }
+        }
+        catch (PDOException $e)
+        {
+            die();
+        }
+        unset($pdo);
+        return $comments;
+    }
     public function del($val , $id)
     {
         $pdo = $this->conn();
